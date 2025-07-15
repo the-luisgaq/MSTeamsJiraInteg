@@ -61,3 +61,9 @@ Sigue estos pasos para registrar tu bot en Azure Bot Framework y publicarlo en u
 5. **Carga la aplicación en Teams** seleccionando *Aplicaciones → Cargar una aplicación personalizada* y elige el paquete generado. Así el bot estará disponible en el equipo o canal elegido.
 
 [portal]: https://portal.azure.com/
+
+## Infraestructura como código
+
+Para automatizar la creación de los recursos en Azure, se incluye el directorio `infra/` con un archivo `main.tf`. Este archivo despliega el App Service Plan, el App Service y el recurso de Azure Bot Service necesarios para el bot mediante **Terraform**.
+
+Sigue las instrucciones de `infra/README.md` para ejecutar el despliegue con Terraform.
