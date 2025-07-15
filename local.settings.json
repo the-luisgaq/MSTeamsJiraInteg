@@ -1,0 +1,10 @@
+{
+  "IsEncrypted": false,
+  "Values": {
+    "PORT": "3000",
+    "JIRA_URL": "https://your-jira-instance.example.com",
+    "JIRA_USERNAME": "your-jira-username",
+    "JIRA_API_TOKEN": "your-jira-api-token",
+    "TEAMS_WEBHOOK_URL": "https://outlook.office.com/webhook/your-webhook-id"
+  }
+}
