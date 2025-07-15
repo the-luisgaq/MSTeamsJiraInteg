@@ -32,3 +32,7 @@ El bot se comunica con Jira Data Center utilizando la API REST. Cada comando rec
 - **Azure Bot Service**: proporciona el canal de comunicación con Teams y maneja la autenticación OAuth si es necesario.
 - **Azure App Service**: hospeda y ejecuta el código del bot, permitiendo escalar según la demanda.
 
+
+## Carpeta `bot/`
+
+En `bot/` se incluye un ejemplo de aplicación Node.js que expone el endpoint `/jira-webhook` para recibir notificaciones de Jira. Dichos eventos se transforman en mensajes enviados a Microsoft Teams mediante un webhook entrante definido en la variable de entorno `TEAMS_WEBHOOK_URL`.
