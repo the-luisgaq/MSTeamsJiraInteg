@@ -15,6 +15,15 @@ Este proyecto permite interactuar con Jira Data Center desde Microsoft Teams med
 2. Instancia de Jira Data Center accesible vía red y con la API REST habilitada.
 3. Credenciales de un usuario de Jira con permisos apropiados.
 4. Node.js instalado localmente si se desea desarrollar o modificar el bot.
+## Variables de entorno
+
+Se incluye el archivo `.env.example` y `local.settings.json` con las variables necesarias para ejecutar el bot de forma local. Copia uno de estos archivos y completa tus valores:
+
+- `JIRA_URL` y `JIRA_API_TOKEN`: datos de conexión a tu instancia de Jira.
+- `TEAMS_WEBHOOK_URL`: URL del webhook entrante de Teams.
+
+Para producción, usa Azure Key Vault o variables de entorno para almacenar estos secretos de forma segura.
+
 
 ## Despliegue
 
